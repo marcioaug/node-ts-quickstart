@@ -1,0 +1,36 @@
+{
+    "name": "node-ts-quickstart",
+    "version": "0.0.0",
+    "description": "",
+    "main": "dist/index.ts",
+    "scripts": {
+        "build": "rimraf dist/ && tsc",
+        "start": "ts-node src/index.ts",
+        "test": "ts-node node_modules/jasmine/bin/jasmine --config=jasmine.json",
+        "coverage": "nyc --reporter=lcov --reporter=text-summary -e .ts -x \"tests/**/*.spec.ts\" npm run test",
+        "lint": "eslint . --ext .ts",
+        "lint:fix": "eslint . --fix --ext .ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/marcioaug/node-ts-quickstart.git"
+    },
+    "author": "Marcio Augusto Guimarães",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/marcioaug/node-ts-quickstart/issues"
+    },
+    "homepage": "https://github.com/marcioaug/node-ts-quickstart#readme",
+    "devDependencies": {
+        "@types/jasmine": "^3.5.10",
+        "@typescript-eslint/eslint-plugin": "^3.1.0",
+        "@typescript-eslint/parser": "^3.1.0",
+        "eslint": "^7.1.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-import": "^2.20.2",
+        "jasmine": "^3.5.0",
+        "rimraf": "^3.0.2",
+        "ts-node": "^8.10.2",
+        "typescript": "^3.9.5"
+    }
+}
