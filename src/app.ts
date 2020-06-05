@@ -1,4 +1,3 @@
-
 export class App {
 
     static init(): void {
@@ -6,5 +5,3 @@ export class App {
     }
 
 }
-
-App.init();

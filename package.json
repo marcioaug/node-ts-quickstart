@@ -2,13 +2,13 @@
     "name": "node-ts-quickstart",
     "version": "0.0.0",
     "description": "",
-    "main": "dist/index.ts",
+    "main": "src/main.ts",
     "scripts": {
         "build": "rimraf dist/ && tsc",
-        "build:ci": "npm run lint && npm run coverage && rimraf dist/ && tsc",
-        "start": "ts-node src/index.ts",
+        "build:ci": "npm run lint && npm run coverage && npm run build",
+        "start": "ts-node src/main.ts",
         "test": "ts-node node_modules/jasmine/bin/jasmine --config=jasmine.json",
-        "coverage": "nyc --reporter=lcov --reporter=text-summary -e .ts -x \"tests/**/*.spec.ts\" npm run test",
+        "coverage": "nyc --reporter=lcov --reporter=text -e .ts -x \"tests/**/*.spec.ts\" npm run test",
         "lint": "eslint . --ext .ts",
         "lint:fix": "eslint . --fix --ext .ts"
     },
