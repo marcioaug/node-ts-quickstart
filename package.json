@@ -17,7 +17,7 @@
         "url": "git+https://github.com/marcioaug/node-ts-quickstart.git"
     },
     "author": "Marcio Augusto Guimarães",
-    "license": "ISC",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/marcioaug/node-ts-quickstart/issues"
     },
